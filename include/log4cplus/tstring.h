@@ -31,6 +31,7 @@
 #endif
 
 #include <string>
+#include <utility>
 #include <log4cplus/tchar.h>
 
 namespace log4cplus
