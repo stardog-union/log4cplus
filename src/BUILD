@@ -9,6 +9,7 @@ cc_library(
         "//include",
         "//threadpool",
     ],
-    copts = ["-DINSIDE_LOG4CPLUS=1", "-DLOG4CPLUS_BUILD_DLL", "-D_DLL"],
+    copts = ["-DINSIDE_LOG4CPLUS=1"],
+    defines = ["LOG4CPLUS_BUILD_DLL", "_DLL", "LOG4CPLUS_DISABLE_TRACE", "LOG4CPLUS_DISABLE_DEBUG", "LOG4CPLUS_DISABLE_INFO", "LOG4CPLUS_DISABLE_WARN", "LOG4CPLUS_DISABLE_ERROR", "LOG4CPLUS_DISABLE_FATAL"],
     visibility = ["//visibility:public"],
 )
